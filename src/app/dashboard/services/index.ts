@@ -1,5 +1,5 @@
 import { DashboardService } from './dashboard/dashboard.service';
 
-export const services: any[] = [DashboardService];
+export const services = [DashboardService];
 
 export * from './dashboard/dashboard.service';

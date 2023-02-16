@@ -4,9 +4,10 @@ import { DashboardRoutingModule } from './dashboard-routing.module';
 import { DashboardComponent } from './dashboard.component';
 import { DashboardResolver } from './resolver/dashboard.resolver';
 import * as fromServices from './services';
+import * as fromComponents from './components';
 
 @NgModule({
-  declarations: [DashboardComponent],
+  declarations: [DashboardComponent, fromComponents.components],
   imports: [SharedModule, DashboardRoutingModule],
   providers: [fromServices.services, DashboardResolver],
 })

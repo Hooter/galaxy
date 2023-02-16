@@ -1,0 +1,7 @@
+<p>list works!</p>
+<p> {{items | json }}</p>
+<ul>
+  <li *ngFor="let item of items; trackBy: trackStatus">
+    <p>{{ item?.status }}</p>
+  </li>
+</ul>
